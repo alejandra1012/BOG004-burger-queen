@@ -27,27 +27,35 @@ export function Register() {
 
 	return (
 		<>
-			<div>
+			<header>
+				<h1>PIDE YA</h1>
+			</header>
+			<div className='container-login'>
 				{error && <p>{error} </p>}
+				<h4 className='titulo'>BIENVENID@ INGRESA AQUI</h4>
 				<form onSubmit={handleSubmit}>
-					<label htmlFor='email'>Email</label>
+					<label htmlFor='email'></label>
 					<input
 						type='text'
 						name='email'
-						placeholder='Email'
+						placeholder='Correo'
 						onChange={handleChange}
 					/>
 
-					<label htmlFor='password'>Password</label>
+					<label htmlFor='password'></label>
 					<input
 						type='password'
 						name='password'
+						placeholder='Contraseña'
 						id='password'
 						onChange={handleChange}
 					/>
-
-					<button>Register</button>
 				</form>
+				<button className='registrar'>Registrar</button>
+				<h4>¿ya tienes cuenta con PIDE YA?</h4>
+				<a href='/'>
+					<button className='registro'>Inicia sesión aquí</button>
+				</a>
 			</div>
 		</>
 	);

@@ -10,7 +10,6 @@ import { ProtectedRoute } from './components/ProtectedRoute';
 function App() {
 	return (
 		<div className='App'>
-			<h1>Welcome</h1>
 			<AuthProvider>
 				<Routes>
 					<Route path='/' element={<Login />} />
