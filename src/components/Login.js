@@ -41,7 +41,7 @@ export function Login() {
 				<h1>PIDE YA</h1>
 			</header>
 			<div className='container-login'>
-				{error && <p>{error} </p>}
+				{error && <h4 data-testid='mensaje-error'>{error} </h4>}
 				<h4 className='titulo'>BIENVENID@ INGRESA AQUI</h4>
 				<form onSubmit={handleSubmit}>
 					<label htmlFor='email'></label>
